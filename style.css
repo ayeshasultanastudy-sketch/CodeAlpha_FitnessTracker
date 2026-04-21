@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.input-section button {
+  padding: 10px 15px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background: #45a049;
+}
+
+.summary {
+  background: #e8f0ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.summary p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.progress-section {
+  margin-top: 20px;
+  background: #fff7e6;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.bar-container {
+  margin: 10px 0;
+}
+
+.bar {
+  width: 100%;
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#calorieBar {
+  height: 100%;
+  width: 0%;
+  background: #ff6b6b;
+  transition: 0.3s;
+}
+
+#timeBar {
+  height: 100%;
+  width: 0%;
+  background: #4dabf7;
+  transition: 0.3s;
+}
+
+.activity-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.activity-list li {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-left: 5px solid #4CAF50;
+  border-radius: 6px;
+}

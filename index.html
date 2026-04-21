@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Tracker App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>🏋️ Fitness Tracker</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <input type="text" id="activity" placeholder="Activity (e.g. Running)" />
+      <input type="number" id="duration" placeholder="Duration (mins)" />
+      <input type="number" id="calories" placeholder="Calories burned" />
+      <button onclick="addActivity()">Add Activity</button>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary">
+      <h2>Today's Summary</h2>
+      <p>Total Activities: <span id="totalActivities">0</span></p>
+      <p>Total Calories: <span id="totalCalories">0</span></p>
+      <p>Total Time: <span id="totalTime">0</span> mins</p>
+    </div>
+
+    <!-- Progress Section -->
+    <div class="progress-section">
+      <h2>Progress Overview</h2>
+
+      <div class="bar-container">
+        <label>Calories Burned</label>
+        <div class="bar">
+          <div id="calorieBar"></div>
+        </div>
+      </div>
+
+      <div class="bar-container">
+        <label>Time Spent</label>
+        <div class="bar">
+          <div id="timeBar"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity List -->
+    <div class="activity-list">
+      <h2>Activity Log</h2>
+      <ul id="list"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
